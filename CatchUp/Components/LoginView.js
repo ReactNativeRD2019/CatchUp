@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, TextInput, StyleSheet, Alert, Dimensions, Image, SectionStyle } from 'react-native';
 import { Button, Text } from 'react-native-elements';
+import { createStackNavigator, createAppContainer } from 'react-navigation';
 const LoginView = (props) => {
     var userName = "";
     var userPassword = "";
@@ -20,9 +21,11 @@ const LoginView = (props) => {
     };
 
     const signUpActionHandler = () => {
-        Alert.alert(
-            'Signup Tapped'
-        )
+        console.log("signup")
+        props.navigation.navigate('Signup')
+        // Alert.alert(
+        //     'Signup Tapped'
+        // )
     };
 
     const forgotPasswordActionHandler = () => {
