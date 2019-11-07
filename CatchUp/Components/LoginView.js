@@ -20,8 +20,8 @@ const LoginView = (props) => {
     };
 
     const signUpActionHandler = () => {
-        'Signup Tapped'
         Alert.alert(
+            'Signup Tapped'
         )
     };
 
@@ -45,10 +45,11 @@ const LoginView = (props) => {
                     <Image source={require('../Assets/password.png')} style={styles.ImageStyle} />
                     <TextInput style={styles.textInput} placeholder="Password" underlineColorAndroid="transparent" />
                 </View>
-                <Button buttonStyle= {styles.loginButton}  titleStyle={styles.buttonTitle} title='Login' onPress={loginActionHandler} />
+                <Button buttonStyle={styles.loginButton} titleStyle={styles.buttonTitle} title='Login' onPress={loginActionHandler} />
                 <View style={styles.bottomView}>
-                    <Button buttonStyle={styles.bottomButton} titleStyle={styles.buttonTitle} title='Sign up'  onPress={signUpActionHandler} />
-                    <Button buttonStyle={styles.bottomButton} titleStyle={styles.buttonTitle} title='Forgot Password' onPress={forgotPasswordActionHandler} />
+                    <Button buttonStyle={styles.bottomButton} titleStyle={styles.buttonTitle} title='Sign up' onPress={signUpActionHandler} />
+                    <Text style={{ backgroundColor: 'white', width: 1, alignItems: 'center' }} >|</Text>
+                    <Button buttonStyle={styles.bottomButton} titleStyle={styles.buttonTitle} title='Forgot Password ?' onPress={forgotPasswordActionHandler} />
                 </View>
             </View>
         </View>
@@ -79,10 +80,10 @@ const styles = StyleSheet.create({
         fontSize: 14
     },
 
-    textInput:{
-     flex: 1,
-     fontSize: 13,
-     fontFamily: 'KohinoorTelugu-Medium'
+    textInput: {
+        flex: 1,
+        fontSize: 13,
+        fontFamily: 'KohinoorTelugu-Medium'
     },
 
     buttonTitle: {
