@@ -73,9 +73,9 @@ const styles = StyleSheet.create({
         width: Dimensions.get('window').width / 3,
         justifyContent: 'center',
         borderRadius: 20,
-        shadowOffset: { width: 1, height: 1, },
+        shadowOffset: { width: 0.5, height: 0.5, },
         shadowColor: 'black',
-        shadowOpacity: 1,
+        shadowOpacity: 0.5,
         fontFamily: 'KohinoorTelugu-Regular',
         fontSize: 14
     },
@@ -103,7 +103,10 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         position: 'absolute',
         bottom: 0,
-        flexDirection: 'row'
+        flexDirection: 'row',
+        shadowOffset: { width: 0.5, height: 0.5, },
+        shadowColor: 'black',
+        shadowOpacity: 0.5
     },
     backgroundImage: {
         flex: 1,
