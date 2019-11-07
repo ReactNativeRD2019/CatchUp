@@ -4,7 +4,7 @@ import {View,StyleSheet,Text} from 'react-native';
 const SignupView = () => {
     return(
         <View style = {styles.rootView}>
-            <Text style ={styles.text}></Text>
+            <Text style ={styles.text}>Welcome</Text>
         </View>
     );
 }
@@ -18,7 +18,8 @@ const styles = StyleSheet.create(
             alignItems: 'center' 
         },
         text: {
-            fontSize:10,
+            fontSize:20,
+            color:'white'
         }
     }
 );
