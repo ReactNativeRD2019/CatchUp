@@ -5,7 +5,6 @@ import { createStackNavigator, createAppContainer } from 'react-navigation';
 const LoginView = (props) => {
     var userName = "";
     var userPassword = "";
-
     const usernameInputhandler = (usernameText) => {
         console.log(userText)
         userName = usernameText;
@@ -23,9 +22,6 @@ const LoginView = (props) => {
     const signUpActionHandler = () => {
         console.log("signup")
         props.navigation.navigate('Signup')
-        // Alert.alert(
-        //     'Signup Tapped'
-        // )
     };
 
     const forgotPasswordActionHandler = () => {
